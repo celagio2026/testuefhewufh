@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0 auto;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/originals/b8/f4/c0/b8f4c048cdc9f521294171426cd19369.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.navbar{
+    margin: 0px;
+    padding: 2px;
+}
+
+.container-fluid{
+    margin-top: 2%;
+    margin-left: 5.8%;
+}
+
+@media only screen and (max-width: 990px) {
+
+    .navbar-brand img{
+        border-radius: 90%;
+        width: 60px;
+        height: 60px;
+        margin-top: 6%;
+    }
+
+    .container-fluid{
+        margin-right: 21%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-brand img{
+        border-radius: 90%;
+        width: 30px;
+        height: 30px;
+        margin-top: 6%;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 8%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 2%;
+        margin-left: 25%;
+    }
+}
+
+.gradient-navbar{
+    background-image: linear-gradient(90deg,  #83486a00, #66387900);
+}
+
+.navbar-brand img{
+    border-radius: 90%;
+    width: 90px;
+    height: 90px;
+    margin-top: 6%;
+}
+
+.navbar-title a{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    margin-right: 4.5%;
+    margin-top: 2%;
+}
+
+li{
+    padding-right: 30px;
+    padding-bottom: 5%;
+}
+
+li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+li a:after{     
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+li .active{
+    color: white;
+}
+
+li .active:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+li a:hover{
+    color: #ffffff;
+}
+
+li a:hover:after{
+    width: 100%;
+}
+
+.title{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.row{
+    margin: 0;
+    padding: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%px;
+}
+
+.col-md-6{
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card{
+    width: 100%;
+    max-width: 1000px;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+
+    border-radius: 1rem;
+    border: 1px solid transparent;
+
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+    border-top-color: rgba(225, 225, 225, 0.5);
+    border-left-color: rgba(225, 225, 225, 0.5);
+    border-bottom-color: rgba(225, 225, 225, 0.1);
+    border-right-color: rgba(225, 225, 225, 0.1);
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-title{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.cb1, .cb2{
+    background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.166), rgba(225, 225, 225, 0.045));
+}
+
+.btn{
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.btn:hover{
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+    transition: ease 0.6s;
+}
